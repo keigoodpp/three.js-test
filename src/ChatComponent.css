@@ -1,0 +1,85 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .messages-list {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .message-input-container {
+    display: flex;
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  
+  .message-input, .send-button {
+    border: 1px solid #ccc;
+  }
+  
+  
+  .send-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .expanded {
+    max-height: 500px;
+  }
+  
+  .collapsed {
+    max-height: 40px; /* ボタンが画面外に出ないように高さを調整 */
+  }
+  
+  .toggle-button {
+    width: 100%;
+    height: 40px; /* ボタンの高さを指定して、押しやすくする */
+    background: #007bff; /* ボタンの背景色を設定 */
+    color: white; /* ボタンのテキスト色を設定 */
+    border: none;
+    border-radius: 10px 10px 0 0; /* 上部の角を丸くする */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .send-button {
+    cursor: pointer;
+  }

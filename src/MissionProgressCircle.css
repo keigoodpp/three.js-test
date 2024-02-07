@@ -1,0 +1,15 @@
+/* MissionProgressCircle.css */
+.mission-progress-container {
+    text-align: center;
+  }
+  
+  .mission-progress-circle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .mission-progress-circle:hover {
+    transform: scale(1.1);
+  }
